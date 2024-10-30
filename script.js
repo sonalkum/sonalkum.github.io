@@ -42,3 +42,42 @@ sections.forEach(section => {
     observer.observe(section);
     section.classList.add('hidden');
 });
+
+// Animated Typing Text
+const typedText = document.querySelector('.animated-text');
+const textArray = [
+    "Welcome to my personal website!",
+    "I work on audio language models.",
+    "Our work GAMA got nominated for oral presentation at EMNLP 2024.",
+];
+const typingDelay = 100; // Delay between each character (milliseconds)
+const erasingDelay = 50; // Delay between each character when erasing
+const newTextDelay = 2000; // Delay between current and next text (milliseconds)
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+        typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+    } else {
+        setTimeout(erase, newTextDelay);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typedText.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+    } else {
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 500);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+    if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
