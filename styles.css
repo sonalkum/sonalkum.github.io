@@ -33,6 +33,18 @@ nav {
     color: white;
 }
 
+/* Logo Styles */
+.logo a {
+    color: #ffffff; /* Sets the text color to white */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+.logo a:hover,
+.logo a:visited,
+.logo a:active {
+    color: #ffffff; /* Ensures the color remains white on hover, visited, and active states */
+}
+
 .icon-burger {
     display: none;
     cursor: pointer;
@@ -64,6 +76,16 @@ nav {
 
 .nav-link:hover {
     color: #00ccff;
+}
+
+nav .logo a {
+    color: #ffffff !important;
+}
+
+nav .logo a:hover,
+nav .logo a:visited,
+nav .logo a:active {
+    color: #ffffff !important;
 }
 
 /* Responsive Navigation */
@@ -115,11 +137,11 @@ nav {
 }
 
 /* Landing Section */
-#home {
+/* #home {
     position: relative;
     height: 100vh;
-    background: url('images/ai-background.jpg') no-repeat center center/cover;
-}
+    /* background: url('images/ai-background.jpg') no-repeat center center/cover; */
+} */
 
 .landing-container {
     position: absolute;
