@@ -537,3 +537,56 @@ footer p {
         opacity: 1;
     }
 }
+
+/* Resume Section */
+#resume {
+    padding: 100px 0;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pdf-viewer {
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.download-button {
+    margin-top: 20px;
+}
+
+.download-button .btn {
+    background-color: #1f265f;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.download-button .btn i {
+    margin-right: 10px;
+}
+
+.download-button .btn:hover {
+    background-color: #e5b567;
+    color: #0d0d0d;
+    border-color: #e5b567;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
