@@ -46,9 +46,10 @@ sections.forEach(section => {
 // Animated Typing Text
 const typedText = document.querySelector('.animated-text');
 const textArray = [
-    "Welcome to my personal website!",
     "I work on audio language models.",
-    "Our work GAMA got nominated for oral presentation at EMNLP 2024.",
+    "3 papers accepted at ICLR 2025.",
+    "3 papers accepted at NAACL 2025.",
+    "Wrapped up my internship at Adobe."
 ];
 const typingDelay = 100; // Delay between each character (milliseconds)
 const erasingDelay = 50; // Delay between each character when erasing
