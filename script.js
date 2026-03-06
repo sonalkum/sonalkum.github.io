@@ -3,7 +3,7 @@
 // =============================================
 (function () {
     // Apply saved theme immediately before paint to avoid flash
-    const saved = localStorage.getItem('theme') || 'dark';
+    const saved = localStorage.getItem('theme') || 'light';
     if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
 })();
 
