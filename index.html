@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sonal Kumar | About Me</title>
+    <title>Sonal Kumar | PhD Researcher in Audio AI</title>
+    <meta name="description"
+        content="Sonal Kumar – PhD student at UMD researching audio-language models, multimodal learning, and speech processing.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Academicons for Google Scholar icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1/css/academicons.min.css">
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
+    <!-- Navigation -->
+    <header id="main-header">
         <nav>
-            <div class="logo"><a href="index.html">Sonal Kumar</a></div>
+            <div class="logo"><a href="#about">Sonal Kumar</a></div>
             <input type="checkbox" id="nav-toggle">
             <label for="nav-toggle" class="icon-burger">
                 <div class="line"></div>
@@ -26,64 +27,977 @@
                 <div class="line"></div>
             </label>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">About Me</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <!-- <li><a href="awards.html" class="nav-link">Awards</a></li> -->
-                <li><a href="news.html" class="nav-link">News</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
+
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+                <li><a href="#service" class="nav-link" data-section="service">Service</a></li>
+                <li><a href="#news" class="nav-link" data-section="news">News</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
             </ul>
+            <button id="theme-toggle" class="theme-btn" title="Toggle light/dark mode" aria-label="Toggle theme">
+                <i class="fas fa-sun" id="theme-icon"></i>
+            </button>
         </nav>
     </header>
 
-    <!-- About Me Section -->
+    <!-- ========================================================
+         ABOUT
+    ======================================================== -->
     <section id="about">
+        <!-- Animated gradient orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
         <div class="section-container">
-            <h2>About Me</h2>
             <div class="about-content">
                 <div class="profile-container">
-                    <img src="images/sonal.png" alt="Your Photo" class="profile-pic">
-                    <!-- Social Media Icons -->
+                    <div class="profile-ring">
+                        <img src="images/sonal.png" alt="Sonal Kumar" class="profile-pic">
+                    </div>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/realsonalkumar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/sonalkum" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://x.com/realsonalkumar" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://scholar.google.com/citations?user=jiJ2DcEAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>        
+                        <a href="https://www.linkedin.com/in/realsonalkumar/" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sonalkum" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://x.com/realsonalkumar" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://scholar.google.com/citations?user=jiJ2DcEAAAAJ" target="_blank"
+                            title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
                         <a href="mailto:sonalkum@umd.edu" title="Email"><i class="fa-regular fa-envelope"></i></a>
-                        <!-- Add any other icons as needed -->
                     </div>
                 </div>
                 <div class="bio">
-                    <p>I am Sonal Kumar, a Ph.D. student in Computer Science at the University of Maryland, College Park (UMCP), working under the mentorship of Prof. Dinesh Manocha and Prof. Ramani Duraiswami. As part of the Gamma Lab and PIRL Lab, my research is centered on audio-language models, multimodal learning, and advanced reasoning in speech and audio processing. My work aims to bridge the gap in audio comprehension for AI, applying resource-efficient techniques to complex audio and language understanding tasks.
-                        <br><br>
-                        Previously, I served as a Software Engineer II at Cisco Systems, Bangalore, where I led projects in network automation and developed machine learning solutions to enhance customer service. My industry experience also includes a Research Scientist Internship at Adobe, where I focused on audio generative models within the audio research team.
-                        <br><br>
-                        <!-- I have had the privilege of working with experts in the field, including Prof. S. Umesh at IIT Madras, where I explored resource-efficient methods in self-supervised speech learning, and Prof. Rajiv Ratn Shah at MIDAS Labs, IIIT Delhi, focusing on content moderation and speech recognition for low-resource Indian languages.
-                        <br><br> -->
-                        I graduated with a Bachelor’s in Computer Science and Engineering from Christ University in 2021. During my time there, I served as the President of Neuron, the university’s first AI club, where I led research-focused hackathons and initiatives to promote AI innovation. My undergraduate years also saw me winning multiple hackathons, including national and international competitions.
-                        <br><br>
-                        You can find my publications and research projects under the Research tab. I am passionate about collaboration, so please feel free to reach out if you’d like to work together on advancing audio-language intelligence!</p></p>
-</p>
+                    <div class="bio-tag">PhD Candidate · UMD College Park</div>
+                    <h1>Hi, I'm Sonal Kumar</h1>
+                    <p>I am a Ph.D. student in Computer Science at the University of Maryland, College Park, working
+                        under Prof. <strong>Dinesh Manocha</strong> and Prof. <strong>Ramani Duraiswami</strong>. As
+                        part of the <strong>Gamma Lab</strong> and <strong>PIRL Lab</strong>, my research is centered on
+                        <strong>audio-language models</strong>, multimodal learning, and advanced reasoning in speech
+                        and audio processing.
+                    </p>
+                    <p>Previously, I was a Software Engineer II at Cisco Systems, and a Research Scientist Intern at
+                        <strong>Adobe</strong>, where I focused on audio generative models. I graduated with a B.Tech in
+                        Computer Science from Christ University in 2021, where I served as President of <em>Neuron</em>,
+                        the university's first AI club.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#publications" class="btn-primary">View Research</a>
+                        <a href="Sonal_CV.pdf" target="_blank" class="btn-secondary"><i class="fas fa-download"></i>
+                            Download CV</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="animated-text-container">
-            <h2 class="animated-text"></h2>
+            <span class="animated-label">Latest: </span><span class="animated-text"></span><span
+                class="cursor-bar">|</span>
         </div>
     </section>
+
+    <!-- ========================================================
+         PUBLICATIONS
+    ======================================================== -->
+    <section id="publications">
+        <div class="section-container">
+            <h2>Publications</h2>
+            <p class="section-subtitle">Audio, speech &amp; multimodal research &nbsp;·&nbsp; <a
+                    href="https://scholar.google.com/citations?user=jiJ2DcEAAAAJ" target="_blank">Full Google Scholar
+                    profile →</a></p>
+
+            <div class="pub-list">
+
+                <!-- ---- 2026 ---- -->
+                <div class="pub-year-group">
+                    <div class="pub-year-label">2026</div>
+                    <div class="pub-items">
+
+                        <div class="pub-card" id="pub-tac">
+                            <div class="pub-card-header" onclick="togglePub('pub-tac')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge">arXiv</span>
+                                    <div>
+                                        <h3 class="pub-title">TAC: Timestamped Audio Captioning</h3>
+                                        <p class="pub-authors">S Kumar, P Seetharaman, K Chen, O Nieto, J Su, Z Wang, R
+                                            Kumar, ...</p>
+                                        <p class="pub-venue">arXiv:2602.15766 · 2026</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://sonalkum.github.io/tacmodel" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://arxiv.org/abs/2602.15766" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">We introduce TAC, a system for generating audio captions
+                                        with precise timestamps, enabling fine-grained alignment between audio events
+                                        and their textual descriptions. TAC advances the state of the art in temporal
+                                        audio understanding and supports downstream applications like audio retrieval
+                                        and audio question answering.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ---- 2025 ---- -->
+                <div class="pub-year-group">
+                    <div class="pub-year-label">2025</div>
+                    <div class="pub-items">
+
+                        <div class="pub-card featured" id="pub-af2">
+                            <div class="pub-card-header" onclick="togglePub('pub-af2')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-icml">ICML</span>
+                                    <div>
+                                        <h3 class="pub-title">Audio Flamingo 2: An Audio-Language Model with Long-Audio
+                                            Understanding and Expert Reasoning Abilities</h3>
+                                        <p class="pub-authors">S Ghosh, Z Kong, S Kumar, S Sakshi, J Kim, W Ping, R
+                                            Valle, D Manocha, ...</p>
+                                        <p class="pub-venue">ICML 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://research.nvidia.com/labs/adlr/AF2/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://arxiv.org/abs/2503.03983" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_2"
+                                            target="_blank" class="pub-btn">Code</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <p class="pub-abstract">Audio Flamingo 2 is a large audio-language model capable of
+                                        understanding long audio sequences (up to minutes) and performing complex
+                                        multi-step reasoning about audio content. By combining a powerful audio encoder
+                                        with a long-context language model, AF2 achieves state-of-the-art performance on
+                                        multiple benchmarks while maintaining efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-af3">
+                            <div class="pub-card-header" onclick="togglePub('pub-af3')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-neurips">NeurIPS</span>
+                                    <div>
+                                        <h3 class="pub-title">Audio Flamingo 3: Advancing Audio Intelligence with Fully
+                                            Open Large Audio Language Models</h3>
+                                        <p class="pub-authors">A Goel, S Ghosh, J Kim, S Kumar, Z Kong, S Lee, CHH Yang,
+                                            ...</p>
+                                        <p class="pub-venue">NeurIPS 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://research.nvidia.com/labs/adlr/AF3/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://arxiv.org/abs/2507.08128" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_3"
+                                            target="_blank" class="pub-btn">Code</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">Audio Flamingo 3 presents a fully open-source suite of large
+                                        audio language models, advancing audio intelligence through improved training
+                                        recipes, open model weights, and competitive performance across diverse audio
+                                        understanding and reasoning benchmarks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-mmau-pro">
+                            <div class="pub-card-header" onclick="togglePub('pub-mmau-pro')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-aaai">AAAI</span>
+                                    <div>
+                                        <h3 class="pub-title">MMAU-Pro: A Challenging and Comprehensive Benchmark for
+                                            Holistic Evaluation of Audio General Intelligence</h3>
+                                        <p class="pub-authors">S Kumar, Š Sedláček, V Lokegaonkar, F López, W Yu, N
+                                            Anand, H Ryu, ...</p>
+                                        <p class="pub-venue">AAAI 2026</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://sonalkum.github.io/mmau-pro/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://arxiv.org/abs/2508.13992" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">MMAU-Pro extends the original MMAU benchmark with
+                                        significantly more challenging questions requiring deeper expert-level knowledge
+                                        and multi-step reasoning across speech, music, and environmental sound. It
+                                        provides a harder evaluation frontier for the next generation of audio general
+                                        intelligence systems.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-dalm">
+                            <div class="pub-card-header" onclick="togglePub('pub-dalm')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-naacl">NAACL</span>
+                                    <div>
+                                        <h3 class="pub-title">Do Audio-Language Models Understand Linguistic Variations?
+                                        </h3>
+                                        <p class="pub-authors">R Selvakumar*, S Kumar*, HK Giri, N Anand, A Seth, S
+                                            Ghosh,
+                                            D Manocha</p>
+                                        <p class="pub-venue">NAACL 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2410.16505" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://github.com/ramaneswaran/linguistic_robust_clap" target="_blank"
+                                            class="pub-btn">Code</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">We systematically investigate the robustness of
+                                        audio-language models to linguistic variations in text queries — including
+                                        paraphrasing, negation, and syntactic transformations — revealing significant
+                                        brittleness in current ALMs and proposing evaluation protocols to benchmark this
+                                        understudied dimension of model robustness.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-sila">
+                            <div class="pub-card-header" onclick="togglePub('pub-sila')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-waspaa">WASPAA</span>
+                                    <div>
+                                        <h3 class="pub-title">SILA: Signal-to-Language Augmentation for Enhanced Control
+                                            in Text-to-Audio Generation</h3>
+                                        <p class="pub-authors">S Kumar, P Seetharaman, J Salamon, D Manocha, O Nieto</p>
+                                        <p class="pub-venue">WASPAA 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://sonalkum.github.io/SILA/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">SILA introduces a data augmentation framework for
+                                        text-to-audio generation that bridges the gap between signal-level audio
+                                        properties and language descriptions. By automatically generating rich,
+                                        controllable textual descriptions from audio signals, SILA enables more faithful
+                                        and controllable audio synthesis from text prompts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-multivox">
+                            <div class="pub-card-header" onclick="togglePub('pub-multivox')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-emnlp">EMNLP</span>
+                                    <div>
+                                        <h3 class="pub-title">MultiVox: Benchmarking Voice Assistants for Multimodal
+                                            Interactions</h3>
+                                        <p class="pub-authors">R Selvakumar, A Seth, N Anand, U Tyagi, S Kumar, S Ghosh,
+                                            D Manocha</p>
+                                        <p class="pub-venue">EMNLP 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2507.10859" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">MultiVox is a comprehensive benchmark for evaluating voice
+                                        assistants in real-world multimodal interaction scenarios that combine speech,
+                                        visual, and audio signals. It exposes limitations of current voice assistants
+                                        when handling complex, concurrent modalities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-dcase25">
+                            <div class="pub-card-header" onclick="togglePub('pub-dcase25')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-dcase">DCASE</span>
+                                    <div>
+                                        <h3 class="pub-title">Multi-Domain Audio Question Answering Toward Acoustic
+                                            Content Reasoning</h3>
+                                        <p class="pub-authors">CH Huck Yang, S Ghosh, Q Wang, J Kim, H Hong, S Kumar,
+                                            ...</p>
+                                        <p class="pub-venue">DCASE 2025 Challenge</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2505.07365" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">We introduce a multi-domain audio question answering
+                                        challenge spanning environmental sounds, music, and speech. The task requires
+                                        models to reason about acoustic content across diverse domains, pushing the
+                                        frontier of audio general intelligence beyond category classification.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-reclap">
+                            <div class="pub-card-header" onclick="togglePub('pub-reclap')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-icassp">ICASSP</span>
+                                    <div>
+                                        <h3 class="pub-title">ReClap: Improving Zero-Shot Audio Classification by
+                                            Describing Sounds</h3>
+                                        <p class="pub-authors">S Ghosh, S Kumar, CKR Evuru, O Nieto, R Duraiswami, D
+                                            Manocha</p>
+                                        <p class="pub-venue">ICASSP 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2409.09213" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">ReClap improves zero-shot audio classification by augmenting
+                                        class labels with rich natural language descriptions of the corresponding
+                                        sounds. By training CLAP-style models with these enriched descriptions, ReClap
+                                        significantly improves zero-shot transfer across diverse audio classification
+                                        benchmarks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ---- 2024 ---- -->
+                <div class="pub-year-group">
+                    <div class="pub-year-label">2024</div>
+                    <div class="pub-items">
+
+                        <div class="pub-card featured spotlight" id="pub-mmau">
+                            <div class="pub-card-header" onclick="togglePub('pub-mmau')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-iclr">ICLR ★</span>
+                                    <div>
+                                        <h3 class="pub-title">MMAU: A Massive Multi-Task Audio Understanding and
+                                            Reasoning Benchmark</h3>
+                                        <p class="pub-authors">S Sakshi*, U Tyagi*, S Kumar*, A Seth*, R Selvakumar, O
+                                            Nieto, ...</p>
+                                        <p class="pub-venue">ICLR 2025 — <strong>Spotlight</strong></p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/pdf/2410.19168" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://sakshi113.github.io/mmau_homepage/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://github.com/Sakshi113/mmau/tree/main" target="_blank"
+                                            class="pub-btn">Code</a>
+                                        <a href="https://eval.ai/web/challenges/challenge-page/2391/overview"
+                                            target="_blank" class="pub-btn">EvalAI</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <div class="pub-col-text">
+                                        <p class="pub-abstract">We introduce MMAU — Massive Multi-Task Audio
+                                            Understanding and Reasoning Benchmark — a comprehensive benchmark designed
+                                            to evaluate Large Audio-Language Models on tasks requiring expert-level
+                                            knowledge and complex reasoning. MMAU includes 10,000 meticulously curated
+                                            audio clips paired with human-annotated questions and answers spanning
+                                            speech, environmental sounds, and music. The benchmark covers 27 distinct
+                                            skills across unique and challenging tasks. Even state-of-the-art systems
+                                            like Gemini Pro v1.5 and Qwen2-Audio achieve only ~53% accuracy,
+                                            underscoring substantial headroom for improvement.</p>
+                                    </div>
+                                    <div class="pub-col-img">
+                                        <img src="images/mmau-hero.jpg" alt="MMAU Benchmark" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card featured oral" id="pub-gama">
+                            <div class="pub-card-header" onclick="togglePub('pub-gama')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-emnlp">EMNLP ★</span>
+                                    <div>
+                                        <h3 class="pub-title">GAMA: A Large Audio-Language Model with Advanced Audio
+                                            Understanding and Complex Reasoning Abilities</h3>
+                                        <p class="pub-authors">S Ghosh*, S Kumar*, A Seth, CKR Evuru, U Tyagi, S Sakshi,
+                                            O Nieto, ...</p>
+                                        <p class="pub-venue">EMNLP 2024 — <strong>Oral</strong></p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2406.11768" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://sreyan88.github.io/gamaaudio/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://github.com/Sreyan88/GAMA" target="_blank"
+                                            class="pub-btn">Code</a>
+                                        <a href="https://huggingface.co/spaces/sonalkum/GAMA" target="_blank"
+                                            class="pub-btn">Demo</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <div class="pub-col-text">
+                                        <p class="pub-abstract">We propose GAMA, a novel Large Audio-Language Model
+                                            (LALM) capable of responding accurately to complex questions about input
+                                            audio. GAMA benefits from a mixture of encoders and synthetic data generated
+                                            using a novel data generation pipeline. GAMA achieves state-of-the-art
+                                            performance on various audio understanding, reasoning, and hallucination
+                                            benchmarks, and was nominated for an Oral presentation at EMNLP 2024.</p>
+                                    </div>
+                                    <div class="pub-col-img">
+                                        <img src="images/gama.jpg" alt="GAMA Architecture" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card featured" id="pub-synthio">
+                            <div class="pub-card-header" onclick="togglePub('pub-synthio')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-iclr">ICLR</span>
+                                    <div>
+                                        <h3 class="pub-title">Synthio: Augmenting Small-Scale Audio Classification
+                                            Datasets with Synthetic Data</h3>
+                                        <p class="pub-authors">S Ghosh, S Kumar, Z Kong, R Valle, B Catanzaro, D Manocha
+                                        </p>
+                                        <p class="pub-venue">ICLR 2025</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/pdf/2410.02056" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://github.com/Sreyan88/Synthio" target="_blank"
+                                            class="pub-btn">Code</a>
+                                        <a href="https://huggingface.co/spaces/sonalkum/synthio-stable-audio-open"
+                                            target="_blank" class="pub-btn">Demo</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <div class="pub-col-text">
+                                        <p class="pub-abstract">We present Synthio, a novel method for augmenting
+                                            small-scale audio classification datasets with synthetic data. Our approach
+                                            aligns a Text-to-Audio generation model with the target dataset through
+                                            preference optimization, then uses an iterative LLM prompting method to
+                                            generate diverse audio captions. By augmenting datasets with data generated
+                                            by Synthio, we achieve up to a 39% performance improvement on benchmark
+                                            datasets.</p>
+                                    </div>
+                                    <div class="pub-col-img">
+                                        <img src="images/synthio.jpg" alt="Synthio Framework" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-ehmam">
+                            <div class="pub-card-header" onclick="togglePub('pub-ehmam')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-emnlp">EMNLP</span>
+                                    <div>
+                                        <h3 class="pub-title">EH-MAM: Easy-to-Hard Masked Acoustic Modeling for
+                                            Self-Supervised Speech Representation Learning</h3>
+                                        <p class="pub-authors">A Seth, R Selvakumar, S Sakshi, S Kumar, S Ghosh, D
+                                            Manocha</p>
+                                        <p class="pub-venue">EMNLP 2024</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/pdf/2410.13179" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://github.com/cs20s030/ehmam" target="_blank"
+                                            class="pub-btn">Code</a>
+                                        <a href="https://drive.google.com/file/d/1Rx4MpeN1-0xjjKXx5zbJMCCvGLdVe1nr/view?usp=sharing"
+                                            target="_blank" class="pub-btn">Checkpoint</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <div class="pub-col-text">
+                                        <p class="pub-abstract">EH-MAM introduces an adaptive masked acoustic modeling
+                                            strategy that gradually increases masking difficulty during self-supervised
+                                            pre-training. By selectively reconstructing challenging regions, EH-MAM
+                                            enables better speech representations and outperforms state-of-the-art
+                                            baselines across low-resource speech recognition and SUPERB benchmarks by
+                                            5–10%.</p>
+                                    </div>
+                                    <div class="pub-col-img">
+                                        <img src="images/eh-mam.jpg" alt="EH-MAM" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-lipger">
+                            <div class="pub-card-header" onclick="togglePub('pub-lipger')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-interspeech">InterSpeech</span>
+                                    <div>
+                                        <h3 class="pub-title">LipGER: Visually-Conditioned Generative Error Correction
+                                            for Robust ASR</h3>
+                                        <p class="pub-authors">S Ghosh, S Kumar, A Seth, P Chiniya, U Tyagi, R
+                                            Duraiswami, ...</p>
+                                        <p class="pub-venue">Interspeech 2024</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2406.04432" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://sreyan88.github.io/LipGER/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://github.com/Sreyan88/LipGER" target="_blank"
+                                            class="pub-btn">Code</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">LipGER is a visually-conditioned generative approach to ASR
+                                        error correction that uses lip movements as an additional conditioning signal to
+                                        disambiguate acoustically confusing speech segments. By incorporating visual
+                                        speech information, LipGER substantially reduces word error rates in noisy
+                                        acoustic environments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-recap">
+                            <div class="pub-card-header" onclick="togglePub('pub-recap')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-icassp">ICASSP</span>
+                                    <div>
+                                        <h3 class="pub-title">RECAP: Retrieval-Augmented Audio Captioning</h3>
+                                        <p class="pub-authors">S Ghosh, S Kumar, CKR Evuru, R Duraiswami, D Manocha</p>
+                                        <p class="pub-venue">ICASSP 2024</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2309.09836" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">RECAP introduces retrieval-augmented generation for
+                                        automated audio captioning. By retrieving semantically similar audio captions at
+                                        inference time and conditioning caption generation on them, RECAP produces more
+                                        accurate, diverse, and grounded audio descriptions compared to standard
+                                        encoder-decoder baselines.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-card" id="pub-avrir">
+                            <div class="pub-card-header" onclick="togglePub('pub-avrir')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-cvpr">CVPR</span>
+                                    <div>
+                                        <h3 class="pub-title">AV-RIR: Audio-Visual Room Impulse Response Estimation</h3>
+                                        <p class="pub-authors">A Ratnarajah, S Ghosh, S Kumar, P Chiniya, D Manocha</p>
+                                        <p class="pub-venue">CVPR 2024</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/abs/2312.00834" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner">
+                                    <p class="pub-abstract">AV-RIR leverages both audio and visual cues to estimate room
+                                        impulse responses — the acoustic fingerprint of a space. By jointly modeling
+                                        visual scene geometry and captured audio, AV-RIR achieves significantly more
+                                        accurate RIR estimation than audio-only methods, enabling better downstream
+                                        spatial audio applications.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ---- 2023 ---- -->
+                <div class="pub-year-group">
+                    <div class="pub-year-label">2023</div>
+                    <div class="pub-items">
+
+                        <div class="pub-card featured" id="pub-compa">
+                            <div class="pub-card-header" onclick="togglePub('pub-compa')">
+                                <div class="pub-meta-left">
+                                    <span class="pub-badge pub-badge-iclr">ICLR</span>
+                                    <div>
+                                        <h3 class="pub-title">CompA: Addressing the Gap in Compositional Reasoning in
+                                            Audio-Language Models</h3>
+                                        <p class="pub-authors">S Ghosh*, A Seth*, S Kumar*, U Tyagi*, CK Evuru*, S
+                                            Ramaneswaran, ...</p>
+                                        <p class="pub-venue">ICLR 2024</p>
+                                    </div>
+                                </div>
+                                <div class="pub-card-right">
+                                    <div class="pub-links" onclick="event.stopPropagation()">
+                                        <a href="https://arxiv.org/pdf/2310.08753" target="_blank"
+                                            class="pub-btn">arXiv</a>
+                                        <a href="https://sreyan88.github.io/compa_iclr/" target="_blank"
+                                            class="pub-btn">Page</a>
+                                        <a href="https://github.com/Sreyan88/CompA" target="_blank"
+                                            class="pub-btn">Code</a>
+                                    </div>
+                                    <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="pub-card-body">
+                                <div class="pub-body-inner layout-2col">
+                                    <div class="pub-col-text">
+                                        <p class="pub-abstract">We introduce CompA, a benchmark for compositional
+                                            reasoning in audio-language models. CompA includes CompA-order (evaluating
+                                            understanding of sequential acoustic events) and CompA-attribute (testing
+                                            attribute-sound association). We demonstrate that models like CLAP struggle
+                                            with compositional reasoning, and propose CompA-CLAP with
+                                            compositionally-aware hard negatives and modular contrastive learning to
+                                            significantly improve performance.</p>
+                                    </div>
+                                    <div class="pub-col-img">
+                                        <img src="images/compa.png" alt="CompA Benchmark" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================
+         SERVICE
+    ======================================================== -->
+    <section id="service">
+        <div class="section-container">
+            <h2>Service</h2>
+
+            <!-- Co-Organizing -->
+            <div class="service-block">
+                <h3 class="service-heading"><i class="fas fa-users-cog"></i> Co-Organizing</h3>
+                <div class="org-cards">
+
+                    <div class="org-card" id="org-dcase">
+                        <div class="org-card-header" onclick="toggleOrg('org-dcase')">
+                            <div class="org-card-left">
+                                <span class="org-badge">DCASE 2025</span>
+                                <div>
+                                    <h4 class="org-title">Audio Question Answering Task at DCASE 2025</h4>
+                                    <p class="org-meta">Challenge: Apr 1 – Jun 15, 2025 &nbsp;·&nbsp; Workshop: Oct
+                                        30–31, 2025 &nbsp;·&nbsp; Barcelona, Spain</p>
+                                </div>
+                            </div>
+                            <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="org-card-body">
+                            <p>The IEEE AASP Challenge on Detection and Classification of Acoustic Scenes and Events
+                                (DCASE) 2025. We proposed the <strong>Audio Question Answering (AQA)</strong> task —
+                                focusing on advancing question-answering capabilities in "interactive audio
+                                understanding," covering both general acoustic events and knowledge-heavy sound
+                                information. The task encourages systems that can accurately interpret and respond to
+                                complex audio-based questions (multi-choice), requiring models to reason across diverse
+                                audio types. Reproducible baselines include a resource-efficient single 8GB RAM setting;
+                                direct enterprise API use is prohibited.</p>
+                            <div class="org-links">
+                                <a href="https://dcase.community/challenge2025/" target="_blank" class="pub-btn">DCASE
+                                    2025 Challenge</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-card" id="org-jsalt">
+                        <div class="org-card-header" onclick="toggleOrg('org-jsalt')">
+                            <div class="org-card-left">
+                                <span class="org-badge org-badge-jsalt">JSALT
+                                    2025</span>
+                                <div>
+                                    <h4 class="org-title">Advancing Expert-Level Reasoning in Large Audio Language
+                                        Models at JSALT 2025</h4>
+                                    <p class="org-meta">Jun 9 – Aug 1, 2025 &nbsp;·&nbsp; Brno, Czechia</p>
+                                </div>
+                            </div>
+                            <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="org-card-body">
+                            <p>The 2025 Jelinek Workshop on Speech and Language Technologies (JSALT) is an eight-week
+                                residential summer research workshop bringing together international teams to work
+                                intensively on challenging problems in speech and language engineering, ML, and AI. We
+                                proposed a workshop focused on advancing <strong>expert-level understanding and complex
+                                    reasoning in audio-language models</strong>, drawing team members from several
+                                universities and industry in the US, Europe, and Asia.</p>
+                            <div class="org-links">
+                                <a href="https://jsalt2025.fit.vutbr.cz/" target="_blank" class="pub-btn">JSALT 2025</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-card" id="org-salma2">
+                        <div class="org-card-header" onclick="toggleOrg('org-salma2')">
+                            <div class="org-card-left">
+                                <span class="org-badge org-badge-emnlp">EMNLP
+                                    2026</span>
+                                <div>
+                                    <h4 class="org-title">Workshop on Speech and Audio Language Models (SALMA-2)</h4>
+                                    <p class="org-meta">Co-located with EMNLP 2026</p>
+                                </div>
+                            </div>
+                            <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="org-card-body">
+                            <p>SALMA-2 is the second edition of the Workshop on Speech and Audio Language Models,
+                                co-located with EMNLP 2026. Building on the success of the first SALMA workshop, this
+                                edition continues to bring together researchers working at the intersection of speech,
+                                audio, and language modeling to share recent advances and foster new collaborations.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Talks & Presentations -->
+            <div class="service-block">
+                <h3 class="service-heading"><i class="fas fa-chalkboard-teacher"></i> Talks &amp; Presentations</h3>
+                <div class="talk-list">
+                    <div class="talk-item">
+                        <div class="talk-icon"><i class="fas fa-chalkboard"></i></div>
+                        <div class="talk-info">
+                            <h4 class="talk-title">PhD Proposal Talk</h4>
+                            <p class="talk-sub">Advancing Expert-Level Audio Understanding and Reasoning in Large Audio
+                                Language Models</p>
+                        </div>
+                        <a href="https://docs.google.com/presentation/d/15zb13OAGRqz-A5ASOw6Z5tqE0UD3l_p-/edit?usp=sharing&ouid=108793133975332475285&rtpof=true&sd=true"
+                            target="_blank" class="pub-btn talk-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
+                    </div>
+                    <div class="talk-item">
+                        <div class="talk-icon"><i class="fas fa-microphone-alt"></i></div>
+                        <div class="talk-info">
+                            <h4 class="talk-title">Introduction to Large Audio Language Models</h4>
+                            <p class="talk-sub">An overview of large audio-language models, benchmarks, and open
+                                research challenges in audio intelligence</p>
+                        </div>
+                        <a href="https://docs.google.com/presentation/d/1mI4XfYktPbiXvuPUfLW_zSADa-AVTDNw/edit?usp=sharing&ouid=108793133975332475285&rtpof=true&sd=true"
+                            target="_blank" class="pub-btn talk-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Committee / Reviewer -->
+            <div class="service-block">
+                <h3 class="service-heading"><i class="fas fa-check-circle"></i> Program Committee &amp; Reviewer</h3>
+                <div class="reviewer-grid">
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">AAAI</span>
+                        <span class="reviewer-years">2026</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">ACL</span>
+                        <span class="reviewer-years">2023, 2024, 2025</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">ARR</span>
+                        <span class="reviewer-years">2023 – Present</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">CVPR</span>
+                        <span class="reviewer-years">2025</span>
+                    </div>
+                    <!-- <div class="reviewer-row">
+                        <span class="reviewer-venue">ECCV</span>
+                        <span class="reviewer-years">2024</span>
+                    </div> -->
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">EMNLP</span>
+                        <span class="reviewer-years">2023, 2024, 2025</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">ICASSP</span>
+                        <span class="reviewer-years">2024, 2025, 2026</span>
+                    </div>
+                    <!-- <div class="reviewer-row">
+                        <span class="reviewer-venue">ICCV</span>
+                        <span class="reviewer-years">2025</span>
+                    </div> -->
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">ICLR</span>
+                        <span class="reviewer-years">2025, 2026</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">ICML</span>
+                        <span class="reviewer-years">2025, 2026</span>
+                    </div>
+                    <!-- <div class="reviewer-row">
+                        <span class="reviewer-venue">Interspeech</span>
+                        <span class="reviewer-years">2023, 2024, 2025, 2026</span>
+                    </div> -->
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">NAACL</span>
+                        <span class="reviewer-years">2024, 2025</span>
+                    </div>
+                    <div class="reviewer-row">
+                        <span class="reviewer-venue">NeurIPS</span>
+                        <span class="reviewer-years">2024, 2025</span>
+                    </div>
+                    <!-- <div class="reviewer-row">
+                        <span class="reviewer-venue">SIGIR</span>
+                        <span class="reviewer-years">2025</span>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================
+         NEWS
+    ======================================================== -->
+    <section id="news">
+        <div class="section-container">
+            <h2>News &amp; Updates</h2>
+            <div class="news-grid">
+                <div class="news-chip"><span class="nc-date">May 2025</span><span class="nc-text">Joined Adobe as
+                        Research Scientist Intern for summer.</span></div>
+                <div class="news-chip"><span class="nc-date">May 2025</span><span class="nc-text">Audio Flamingo 2
+                        accepted at ICML 2025 🎉</span></div>
+                <div class="news-chip"><span class="nc-date">Jan 2025</span><span class="nc-text">3 papers accepted at
+                        ICLR 2025 (incl. one Spotlight).</span></div>
+                <div class="news-chip"><span class="nc-date">Jan 2025</span><span class="nc-text">3 papers accepted at
+                        NAACL 2025.</span></div>
+                <div class="news-chip"><span class="nc-date">Sept 2024</span><span class="nc-text">Released MMAU — most
+                        comprehensive audio reasoning benchmark. <a href="https://sakshi113.github.io/mmau_homepage/"
+                            target="_blank">→</a></span></div>
+                <div class="news-chip"><span class="nc-date">Sept 2024</span><span class="nc-text">GAMA accepted as
+                        <strong>Oral</strong> at EMNLP 2024.</span></div>
+                <div class="news-chip"><span class="nc-date">Sept 2024</span><span class="nc-text">2 papers accepted to
+                        EMNLP 2024.</span></div>
+                <div class="news-chip"><span class="nc-date">Aug 2024</span><span class="nc-text">SALMA workshop
+                        accepted at ICASSP 2025.</span></div>
+                <div class="news-chip"><span class="nc-date">June 2024</span><span class="nc-text">Released GAMA, a
+                        state-of-the-art audio-language model.</span></div>
+                <div class="news-chip"><span class="nc-date">May 2024</span><span class="nc-text">Joined Adobe in San
+                        Francisco as Research Scientist Intern.</span></div>
+                <div class="news-chip"><span class="nc-date">May 2024</span><span class="nc-text">2 papers at ACL 2024 ·
+                        1 paper at ICML 2024.</span></div>
+                <div class="news-chip"><span class="nc-date">Mar 2024</span><span class="nc-text">2 papers at NAACL 2024
+                        · 1 paper at CVPR 2024.</span></div>
+                <div class="news-chip"><span class="nc-date">Jan 2024</span><span class="nc-text">1 paper at ICLR 2024 ·
+                        1 paper at ICASSP 2024.</span></div>
+                <div class="news-chip"><span class="nc-date">Oct 2023</span><span class="nc-text">2 papers accepted to
+                        EMNLP 2023.</span></div>
+                <div class="news-chip"><span class="nc-date">May 2023</span><span class="nc-text">Papers at Interspeech
+                        2023 · ACL 2023 · SIGIR 2023.</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================
+         RESUME
+    ======================================================== -->
+    <section id="resume">
+        <div class="section-container">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <div class="pdf-viewer">
+                    <iframe src="Sonal_CV.pdf" width="100%" height="820px" style="border:none;"></iframe>
+                </div>
+                <div class="download-button">
+                    <a href="Sonal_CV.pdf" download class="btn-primary"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <!-- <div class="social-icons">
-                <a href="https://www.linkedin.com/in/realsonalkumar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/realsonalkumar/" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/sonalkum" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/realsonalkumar" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://scholar.google.com/citations?user=jiJ2DcEAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-            </div> -->
-            <p>&copy; 2023 Sonal Kumar. All Rights Reserved.</p>
+                <a href="https://x.com/realsonalkumar" target="_blank" title="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://scholar.google.com/citations?user=jiJ2DcEAAAAJ" target="_blank"
+                    title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="mailto:sonalkum@umd.edu" title="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Sonal Kumar. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript (if any) -->
     <script src="script.js"></script>
 </body>
+
 </html>
